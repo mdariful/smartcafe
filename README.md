@@ -1,5 +1,6 @@
-# appbar
+# <App name>
 A webapp for take order
+Follow istruction to install [Wiki](https://github.com/mdariful/appbar/wiki)
 Join to https://zube.io/ and sign in with your github account
 ![alt tag](http://mdariful.com/img/projects/paginalogin.jpg)
 ![alt tag](http://mdariful.com/img/projects/paginapricipale.jpg)

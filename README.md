@@ -4,7 +4,7 @@ Follow istruction to install [Wiki](https://github.com/mdariful/appbar/wiki)
 
 For track issue, solve problem and view your assignment, join to [zube.io](https://zube.io/) and sign in with your github account
 
-![alt tag](http://mdariful.com/img/projects/project.jpg)
+![alt tag](http://mdariful.com/img/projects/projects.jpg)
 
 ![alt tag](http://mdariful.com/img/projects/paginalogin.jpg)
 

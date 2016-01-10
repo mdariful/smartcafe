@@ -10,6 +10,12 @@ For track issue, solve problem and view your assignment, join to [zube.io](https
 
 ![alt tag](http://mdariful.com/img/projects/paginapricipale.jpg)
 
+![alt tag](http://mdariful.com/img/projects/ordini.jpg)
+
+![alt tag](http://mdariful.com/img/projects/nuovoutente.jpg)
+
+![alt tag](http://mdariful.com/img/projects/nuovoprodotto.jpg)
+
 ![alt tag](http://mdariful.com/img/projects/paginaprodotti.jpg)
 
 ![alt tag](http://mdariful.com/img/projects/descrizioneprodotto.jpg)

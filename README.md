@@ -1,6 +1,9 @@
 ## App name
-A webapp for take order
-Follow istruction to install [Wiki](https://github.com/mdariful/appbar/wiki)
+A opensource web application for pub and bar.
+
+More info [smartinfo.it](http://smartinfo.it)
+
+Follow the istruction to install [Wiki](https://github.com/mdariful/appbar/wiki)
 
 For track issue, solve problem and view your assignment, join to [zube.io](https://zube.io/) and sign in with your github account
 

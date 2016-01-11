@@ -1,7 +1,7 @@
 ## App name
 A opensource web application for pub and bar.
 
-More info [smartinfo.it](http://smartinfo.it)
+More info [smartcafe.it](http://smartcafe.it)
 
 Follow the istruction to install [Wiki](https://github.com/mdariful/appbar/wiki)
 

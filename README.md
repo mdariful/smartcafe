@@ -1,4 +1,3 @@
-## App name
 A opensource web application for pub and bar.
 
 More info [smartcafe.it](http://smartcafe.it)

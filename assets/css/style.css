@@ -210,3 +210,11 @@ p.copyright {
 .bs-docs-footer p {
     margin-bottom: 0;
 }
+.lang {
+    margin: 0 auto;
+    padding: 20px;
+    width: 170px;
+}
+.lang th a{
+    margin:10px;
+}

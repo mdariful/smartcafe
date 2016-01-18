@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https://smartcafe.it/$1 [R,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP:Accept-language} en [NC]
+RewriteRule ^$ /en [L,R=301]
+</IfModule>
+

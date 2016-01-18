@@ -126,33 +126,40 @@
     <script src="./../assets/js/bootstrap.min.js"></script>
 	<script src="./../assets/js/jquery.countdown.min.js"></script>
 	<script type="text/javascript">
-  $('#countdown').countdown('2016/08/31', function(event) {
-    $(this).html(event.strftime('%w settimane %d giorni <br /> %H:%M:%S'));
-  });
-</script>
+		(function($){
+	  		$('#countdown').countdown('2016/08/31', function(event) {
+		 	$(this).html(event.strftime('%w settimane %d giorni <br /> %H:%M:%S'));
+			 });
+		})(window.jQuery);
+	</script>
 	<script type="text/javascript">
-	$.ajax({
-  "url": "https://www.kimonolabs.com/api/4ecn1f8s?apikey=wu6a4GqSRNbnZSAo27WxyyLXeFD8h2bI",
-  "crossDomain": true,
-  "dataType": "jsonp",
-  //Make a call to the Kimono API following the "url" 
-
-  'success': function(response) {
-    // If the call request was successful and the data was retrieved, this function will create a list displaying the data
-
-    $(".panel-heading").html(response.name);
-    //Puts the API name into the panel heading  
-
-    var collection = response.results.collection1;
-    for (var i = 0; i < collection.length; i++) {
-      // Traverses through every element in the entire collection 
-
-      $(".table").append('<tr><td class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+ collection[i].progresso + '" aria-valuemin="0" aria-valuemax="100" style="width:'+ collection[i].progresso +'">' + collection[i].titolo.text + '<span> </span>' + collection[i].progresso + '</td></tr>' );
-      // adds the text and the links from the first property into the list
-    }
-  }
-
-})
-</script>
+	
+		(function($){
+			$.ajax({
+			  "url": "https://www.kimonolabs.com/api/4ecn1f8s?apikey=wu6a4GqSRNbnZSAo27WxyyLXeFD8h2bI",
+			  "crossDomain": true,
+			  "dataType": "jsonp",
+			  //Make a call to the Kimono API following the "url" 
+			
+			  'success': function(response) {
+			    // If the call request was successful and the data was retrieved, this function will create a list displaying the data
+			
+			    $(".panel-heading").html(response.name);
+			    //Puts the API name into the panel heading  
+			
+			    var collection = response.results.collection1;
+			    for (var i = 0; i < collection.length; i++) {
+			      // Traverses through every element in the entire collection 
+			
+			      $(".table").append('<tr><td class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+ collection[i].progresso + '" aria-valuemin="0" aria-valuemax="100" style="width:'+ collection[i].progresso +'">' + collection[i].titolo.text + '<span> </span>' + collection[i].progresso + '</td></tr>' );
+			      // adds the text and the links from the first property into the list
+			    }
+			  }
+			
+			});
+			
+	})(window.jQuery);
+	
+	</script>
   </body>
 </html>

@@ -1,55 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="http://mdariful.com">
-    <link rel="shortcut icon" href="./../assets/img/favicon.ico">
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Smartcafe - Open source web application for Pubs, Resturants and Bar</title>
+	<meta name="description" content="Smartcafe is a open source application easy to use, safe, and is supported by a large comunity" />
+	<link rel="shortcut icon" href="./../images/favicon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<link href="./../css/style.css" rel="stylesheet"/> 
+	<link href="./../css/colors/style-color-01.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="./../css/contact.css">	
+	<link rel="stylesheet" href="./../css/simple-line-icons.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head> 
+<body>
 
-    <title>smartcafe - open source web application</title>
+<div id="wrapper">
 
-    <!-- Bootstrap -->
-    <link href="./../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="./../assets/css/bootstrap-theme.css" rel="stylesheet">
+	<!-- Inizio intestazione -->
 
-    <!-- siimple style -->
-    <link href="./../assets/css/style.css" rel="stylesheet">
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-	<div id="wrapper">
+	<div id="header">
+	
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<img src="./../assets/img/logo-5.png" alt="smartcafe" width="200">
-					<h2 class="subtitle">We are working on a new open source web application</h2>
-					<div class="lang"><table><tr><th><a href="./../">Italiano</a></th><th><a href=".">English</a></th></tr></table></div>
-					<div id="countdown"></div>
+				<div class="span12">
+				
+					<h1><a href="."><img src="./../images/logo.png" alt="Smartcafe" /></a></h1>
+					<h2 class="menulink"><a href="#">Menu</a></h2>
+					
+					<!-- Inizio menu -->
+					<div id="menu">
+						<ul>  
+							<li><a href=".">Home</a></li> 
+							<li><a href="#about">About</a></li> 
+							<li><a href="https://github.com/mdariful/smartcafe/wiki">Wiki</a></li> 
+							<li><a href="#">Language</a>
+								<ul>
+									<li><a href="./../">Italiano</a></li>
+									<li><a href=".">English</a></li>
+								</ul>
+								</li>
+							<li class="current"><a href="https://github.com/mdariful/smartcafe/releases">Download</a></li> 
+						</ul> 
+					</div> 
+					<!-- Fine menu -->
+					
 				</div>
+				<div class="clearfix"></div>
 			</div>
-			<div class="container padding">
-				<div class="panel panel-info">
-				<div class="panel-heading"> </div>
-					<table class="table table-condensed">
-						<tbody>
-						</tbody>
-					</table>
-				</div>
-			</div>
-
+			
 		</div>
+	
 	</div>
-<footer class="bs-docs-footer" role="contentinfo">
-  
-  <div class="container">
+
+	<!-- Fine intestazione -->
+
+	<!-- Inizio contenuto -->
+
+		<div class="container">
+				 
+            <div class="row">
+	        	
+	        	<div class="span6">
+	        	
+	        		<div class="inner">
+	        		
+	        			<div class="hero">
+	        		
+	        			<h1>Smartcafe</h1>
+						<h2>Start today to use our opensource web application for your business, contact us if you need help.</h2>
+						
+						<a href="https://github.com/mdariful/smartcafe/releases" class="btn btn-primary">Download</a> <a href="https://github.com/mdariful/smartcafe/wiki" class="btn btn-secondary">Documentation</a>
+						
+						</div>
+
+	        			
+	        		</div>
+	        		
+	        	</div>
+	        	
+	        	<div class="span6">
+	        	
+	        		<div class="inner">
+	        		
+	        			<div class="form-box">
+	        			
+	        				<div class="top">
+		        			
+		        				<h2><span class="glyph-item  icon-pencil" aria-hidden="true"></span> Contact us</h2>
+		        				<p>Please fill the form for get in touch.</p>
+		        				
+	        				</div>
+	        			
+	        				<div class="bottom"> 
+
+								<div id="success">
+								    <span class="green textcenter">
+										Your message was sent successfully!
+								    </span>
+								</div>
+
+								<div id="error">
+								    <span>
+										Something went wrong. Please refresh and try again.
+								    </span>
+								</div>
+
+								<form id="contact" name="contact" method="post" novalidate="novalidate">
+
+									<div class="form-row">	 
+								        <input type="text" name="name" id="name" size="30" value="" required="" class="text login_input"  placeholder="Your name">
+								    </div>
+									<div class="form-row">									     
+								        <input type="text" name="email" id="email" size="30" value="" required="" class="text login_input"  placeholder="Email Address">
+								    </div>
+									
+									<div class="form-row">									     
+								        <textarea name="message" id="message" required=""  placeholder="Message"></textarea>
+								    </div>
+									
+									<div class="form-row">									    
+								        <input id="submit" type="submit" name="submit" value="Send now!" class="btn"> <a href="#footer">Privacy Policy</a>
+								    </div>
+								</form>								
+																
+							</div> 
+	        			
+	        			</div>
+	        			<div class="shadow"></div>
+	        			<div class="clearfix"></div>
+	        			
+	        		</div>
+	        		
+	        	</div>
+	        	
+            </div>  
+		
+		</div>
+	
+	<!-- Fine contenuto -->	
+	
+	<div class="clearfix"></div> 
+	
+</div>
+<div id="about"></div>
+<div class="striscia features">
+
+	<div class="container">
+			 
+        <div class="row">
+	    	
+	    	<div class="span3">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-layers" aria-hidden="true"></span>
+	    	
+		        	<h3>Closs platform</h3>
+		        	
+		        	<p>The Application reaches through Whatever device you use.</p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span3">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-emoticon-smile" aria-hidden="true"></span>
+	    	
+		        	<h3>Simple &amp; Easy</h3>
+		        	
+		        	<p>Simple interface, intuitive interaction and easy to use. </p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span3">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-support" aria-hidden="true"></span>
+	    	
+		        	<h3>Excellent Support</h3>
+		        	
+		        	<p>Open Source application is supported by a big comunity. </p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span3">
+	    	
+	        	<div class="inner">
+	        	
+	        		<span class="glyph-item mega icon-lock" aria-hidden="true"></span>
+	    	
+		        	<h3>Privacy &amp; Encrypted</h3>
+		        	
+		        	<p>We respect your privacy. So your data is Encrypted and is your. </p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+
+	    	<div class="clearfix"></div>
+	    	        	
+	    </div>
+
+	</div>
+
+</div>
+
+<div class="striscia highlight striscia-alt">
+
+	<div class="container">
+			 
+        <div class="row"> 
+	    	
+	    	<div class="span6">
+	    	
+	        	<div class="inner inner-text">
+	        		    	
+		        	<h2>Web application <span>Open source</span></h2>
+		        	
+		        	<h4>The Smartcafe application was built with advanced tools. </h4>
+		        	
+		        	<p>An application open source under the Apache License Version 2.0 has been designed and built with advanced tools such as: laravel Framework and Bootstrap. We have two ways to install the application Smartcafe. Through the system Single-Board Computer, a complete package with already installed within the application Smartcafe so their data remains encrypted and locally. Otherwise by an external hosting provider. </p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span6">
+	    	
+	        	<div class="inner">
+	        		    	
+		        	<img src="./../pictures/how.png" alt="Desktop" class="How to install the application" />
+		        	
+		        </div>
+	    	
+	    	</div> 
+
+	    	<div class="clearfix"></div>
+	    	        	
+	    </div>
+
+	</div>
+
+</div>
+
+<div class="striscia highlight">
+
+	<div class="container">
+			 
+        <div class="row"> 
+	    	
+	    	<div class="span6">
+	    	
+	        	<div class="inner">
+	        		    	
+		        	<img src="./../pictures/app.png" alt="Desktop" class="App prototype" />
+		        	
+		        </div>
+	    	
+	    	</div> 
+	    	
+	    	<div class="span6">
+	    	
+	        	<div class="inner inner-text">
+	        		    	
+		        	<h2>Intuitive <span>interface</span></h2>
+		        	
+		        	<h4>Thanks to the tools used we got an optimized application. </h4>
+		        	
+		        	<p>The application is Smartcafe platform adapts to the devices, it evolves according to the needs of the user. Behind the application there is a big comunity that support the project keep you updated and secure. The whole procedure for making the application has been studied in detail even with the help of experts in the field of programming and security. </p>
+		        	
+		        </div>
+	    	
+	    	</div> 
+
+	    	<div class="clearfix"></div>
+	    	        	
+	    </div>
+
+	</div>
+
+</div>
+
+
+<div class="striscia-api features">
+
+	<div class="container">
+			 
+        <div class="row">
+	    	<p class="apititle">Latest activty on the repository</p>
+				<table class="table">
+				
+					
+						<tr class="intestazione">
+							<th>Commits</th>
+							<th>Active Issue</th>
+							<th>Issue closed</th>
+							<th>Issue opened</th>
+						</tr>
+					
+				</table>
+
+	    	<div class="clearfix"></div>
+	    	        	
+	    </div>
+
+	</div>
+
+</div>
+
+<div class="clearfix"></div> 
+
+<div id="footer">
+
+<!--	<p> 
+		<a href="#"><span class="glyph-item mega icon-social-youtube" aria-hidden="true"></span></a>
+		<a href="#"><span class="glyph-item mega icon-social-twitter" aria-hidden="true"></span></a>
+		<a href="#"><span class="glyph-item mega icon-social-tumblr" aria-hidden="true"></span></a>
+		<a href="#"><span class="glyph-item mega icon-social-facebook" aria-hidden="true"></span></a>
+		<a href="#"><span class="glyph-item mega icon-social-dropbox" aria-hidden="true"></span></a>
+		<a href="#"><span class="glyph-item mega icon-social-dribbble" aria-hidden="true"></span></a>
+	</p>
+   	
+	Copyright &copy; 2016-->
+	  <div class="container">
     
     <ul class="bs-docs-footer-links">
       
@@ -65,20 +347,8 @@
         </a>
       </li>
       
-      <li>
-        <a href="#">
-          Zoho
-        </a>
-      </li>
-      
-      <li>
-        <a href="#">
-         About us
-        </a>
-      </li>
-      
     </ul>
-    
+    <div class="bs-docs-footer-links">
     <p>
       Designed and built with all the love in the world by 
       <a href="http://mdariful.com" target="_blank">
@@ -96,7 +366,7 @@
     </p>
     
     <p>
-      Code licensed 
+      Code licensed under
       <a rel="license" href="https://github.com/mdariful/smartcafe" target="_blank">
         Apache
       </a>
@@ -106,49 +376,20 @@
       </a>
       .
     </p>
-    
+    </div>
+	<!--Privacy policy-->
+   <a href="//www.iubenda.com/privacy-policy/7781178" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script> <!--fine privacy policy-->
   </div>
-  
-</footer>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="./../assets/js/bootstrap.min.js"></script>
-	<script src="./../assets/js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-		(function($){
-	  		$('#countdown').countdown('2016/08/31', function(event) {
-		 	$(this).html(event.strftime('%w settimane %d giorni <br /> %H:%M:%S'));
-			 });
-		})(window.jQuery);
-	</script>
-	<script type="text/javascript">
 	
-		(function($){
-			$.ajax({
-			  "url": "https://www.kimonolabs.com/api/4ecn1f8s?apikey=wu6a4GqSRNbnZSAo27WxyyLXeFD8h2bI",
-			  "crossDomain": true,
-			  "dataType": "jsonp",
-			  //Make a call to the Kimono API following the "url" 
-			
-			  'success': function(response) {
-			    // If the call request was successful and the data was retrieved, this function will create a list displaying the data
-			
-			    $(".panel-heading").html(response.name);
-			    //Puts the API name into the panel heading  
-			
-			    var collection = response.results.collection1;
-			    for (var i = 0; i < collection.length; i++) {
-			      // Traverses through every element in the entire collection 
-			
-			      $(".table").append('<tr><td class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="'+ collection[i].progresso + '" aria-valuemin="0" aria-valuemax="100" style="width:'+ collection[i].progresso +'">' + collection[i].titolo.text + '<span> </span>' + collection[i].progresso + '</td></tr>' );
-			      // adds the text and the links from the first property into the list
-			    }
-			  }
-			
-			});
-			
-	})(window.jQuery);
-	
-	</script>
-  </body>
-</html>
+	<div class="clearfix"></div>
 
+</div>
+<!--[if lte IE 7]><script src="js/icons-lte-ie7.js"></script><![endif]-->
+<!--<script src="./../js/jquery.min.js"></script>-->
+<script src="./../js/respond.min.js"></script>
+<script src="./../js/scripts.js"></script>  
+<script src="./../js/jquery.form.js"></script>
+<script src="./../js/jquery.validate.min.js"></script>
+<script src="./../js/contact.js"></script>
+</body>
+</html>

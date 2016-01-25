@@ -647,10 +647,10 @@
 	color: #99979c;
 }
 
-@media (min-width: 768px)
+@media (min-width: 768px){
 .bs-docs-footer p {
     margin-bottom: 0;
-}
+}}
 	
 
 	

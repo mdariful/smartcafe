@@ -12,7 +12,7 @@
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'Simple-Line-Icons';
-	content: attr(data-icon);
+	/*content: attr(data-icon);*/
 	speak: none;
 	font-weight: normal;
 	font-variant: normal;

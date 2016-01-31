@@ -7,5 +7,5 @@
         $subject = 'Message from Contact From ';
 
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-	//mail ($to, $subject, $body, $from);
+	mail ($to, $subject, $body, $from);
 ?>

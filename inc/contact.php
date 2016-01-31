@@ -1,11 +1,13 @@
 <?php
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $from = 'Smartcafe Contact Form';
-        $to = 'info@smartcafe.it';
-        $subject = 'Message from Contact From ';
-
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-	mail ($to, $subject, $body, $from);
+//if "email" variable is filled out, send email
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $to_email = "info@smartcafe.it";
+  $email = $_REQUEST['email'];
+  $subject = "E-mail inviato utilizzando il modulo di contatto";
+  $message = $_REQUEST['message'];
+  
+  //send email
+  mail($to_email, "$subject", $message, "From:" . $email);}
 ?>

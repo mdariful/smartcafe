@@ -23,6 +23,7 @@
   	ga('send', 'pageview');
 
 	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head> 
 <body>
 
@@ -129,7 +130,10 @@
 									<div class="form-row">									     
 								        <textarea name="message" id="message" required=""  placeholder="Messaggio"></textarea>
 								    </div>
-									
+									<div class="form-row">
+									<input type="hidden" class="hiddenRecaptcha" required="" name="hiddenRecaptcha" id="hiddenRecaptcha">
+									<div class="g-recaptcha" data-sitekey="{6Leq-BYTAAAAACrHG-z9jraFUW0fRxXyzBxvyr1S}"></div>
+								</div>
 									<div class="form-row">									    
 								        <input id="submit" type="submit" name="submit" value="Invia" class="btn"> <a href="#footer">Privacy Policy</a>
 								    </div>

@@ -9,11 +9,20 @@ $(function() {
             },
             email: {
                 required: true,
-                
+		email: true
             },
             message: {
                 required: true
-            }
+            },
+	    hiddenRecaptcha: {
+     		required: function() {
+         	if(grecaptcha.getResponse() == '') {
+            	 return true;
+         	} else {
+             		return false;
+         		}
+     		  }
+		}
         },
         messages: {
             name: {
@@ -27,6 +36,8 @@ $(function() {
                 required: "Please enter your message",
                 minlength: "Your message must consist of at least 2 characters"
             },
+
+		
         },
         submitHandler: function(form) {
             $(form).ajaxSubmit({

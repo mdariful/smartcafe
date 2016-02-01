@@ -1,3 +1,6 @@
+$.validator.methods.equal = function(value, element, param) {
+		return value == param;
+	};
 (function($) {
 	'use strict';
 	// Form di contatto
@@ -9,20 +12,16 @@
             },
             email: {
                 required: true,
-		email: true
+		        email: true
             },
             message: {
                 required: true
             },
-	    hiddenRecaptcha: {
-     		required: function() {
-         	if(grecaptcha.getResponse() == '') {
-            	 return true;
-         	} else {
-             		return false;
-         		}
-     		  }
-		}
+	    
+     	    math: {
+						equal: 7	
+					}
+		
         },
         messages: {
             name: {
@@ -36,14 +35,36 @@
                 required: "Please enter your message",
                 minlength: "Your message must consist of at least 2 characters"
             },
-
-		
+            math: {
+                required: "Inserire una striga di minimo 3 caratteri"
+            }
         },
+        /*submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                data: $(form).serialize(),
+                url:"./../inc/contact.php",
+                success: function() {
+                    $('#contact :input').attr('disabled', 'disabled');
+                    $('#contact').fadeTo( "slow", 0.15, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#success').fadeIn();
+                    });
+                },
+                error: function() {
+                    $('#contact').fadeTo( "slow", 0.15, function() {
+                        $('#error').fadeIn();
+                    });
+                }
+            });
+        }*/
         submitHandler: function(form) {
             $(form).ajaxSubmit({
                 type:"POST",
                 data: $(form).serialize(),
                 url:"./../inc/contact.php",
+                
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo( "slow", 0.15, function() {

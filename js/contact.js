@@ -1,4 +1,4 @@
-$(function() {
+(function($) {
 	'use strict';
 	// Form di contatto
     $('#contact').validate({
@@ -38,7 +38,7 @@ $(function() {
             },
 
 		
-        },
+        },
         submitHandler: function(form) {
             $(form).ajaxSubmit({
                 type:"POST",
@@ -60,4 +60,4 @@ $(function() {
             });
         }
     });
-});
+})(jQuery);

@@ -36,7 +36,7 @@ $.validator.methods.equal = function(value, element, param) {
                 minlength: "Your message must consist of at least 2 characters"
             },
             math: {
-                equal: "Somma errata"
+                equal: "Please enter valid number"
             }
         },
         /*submitHandler: function(form) {

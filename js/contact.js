@@ -38,7 +38,7 @@
             },
 
 		
-        },
+        },
         submitHandler: function(form) {
             $(form).ajaxSubmit({
                 type:"POST",

@@ -19,8 +19,8 @@ $.validator.methods.equal = function(value, element, param) {
             },
 	    
      	    math: {
-						equal: 7	
-					}
+		equal: 7	
+	   }
 		
         },
         messages: {
@@ -36,7 +36,7 @@ $.validator.methods.equal = function(value, element, param) {
                 minlength: "Your message must consist of at least 2 characters"
             },
             math: {
-                required: "Inserire una striga di minimo 3 caratteri"
+                equal: "Somma errata"
             }
         },
         /*submitHandler: function(form) {

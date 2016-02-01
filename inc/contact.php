@@ -14,7 +14,6 @@
 //}
   //send email
  // mail($to_email, "$subject", $message, "From:" . $email);
-<?php
 $to      = "info@smartcafe.it";
 $subject = "Email inviato da smartcafe.it"
 $body = $_REQUEST["message"];
@@ -44,7 +43,7 @@ function contains_bad_str($str_to_test) {
   
   foreach($bad_strings as $bad_string) {
     if(eregi($bad_string, strtolower($str_to_test))) {
-      echo "$bad_string found. Suspected injection attempt - mail not being sent.";
+      //echo "$bad_string found. Suspected injection attempt - mail not being sent.";
       exit;
     }
   }
@@ -52,7 +51,7 @@ function contains_bad_str($str_to_test) {
 
 function contains_newlines($str_to_test) {
    if(preg_match("/(%0A|%0D|\\n+|\\r+)/i", $str_to_test) != 0) {
-     echo "newline found in $str_to_test. Suspected injection attempt - mail not being sent.";
+     //echo "newline found in $str_to_test. Suspected injection attempt - mail not being sent.";
      exit;
    }
 } 
@@ -77,5 +76,4 @@ contains_newlines($subject);
 $headers = "From: $email";
 mail($to, $subject, $body, $headers);
 //echo "Thanks for submitting.";
-?>
 ?>

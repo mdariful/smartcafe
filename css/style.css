@@ -332,10 +332,10 @@
 	}
 	
 	.form-row label { 
-		font-size:1.2em;
-		color:#111;
-		font-weight:300;
-		line-height:3em
+		    font-size: 1em;
+		    color: #111;
+		    font-weight: 300;
+		    line-height: 2em;
 	} 
 	
 	.form-row label .glyph-item {

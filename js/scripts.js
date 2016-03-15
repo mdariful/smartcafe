@@ -31,7 +31,7 @@ function resize_intro(){
 }
 
 //couner with api
-(function($){
+/*(function($){
 $.ajax({
 			  "url": "https://www.kimonolabs.com/api/bpw5qg1o?apikey=wu6a4GqSRNbnZSAo27WxyyLXeFD8h2bI",
 			  "crossDomain": true,
@@ -77,4 +77,4 @@ $.ajax({
 			  }
 			
 			});
-})(window.jQuery);
+})(window.jQuery);*/

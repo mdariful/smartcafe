@@ -1,9 +1,15 @@
 $.validator.methods.equal = function(value, element, param) {
-		return value == param;
-	};
+        return value == param;
+    };
 (function($) {
-	'use strict';
-	// Form di contatto
+    'use strict';
+    // Form di contatto
+    var num1 = Math.floor(Math.random() * 20) + 1 ;
+    var num2 = Math.floor(Math.random() * 20) + 1 ;
+    var result = num1+num2;
+
+    $('#captcha').val(num1+" + "+num2);
+
     $('#contact').validate({
         rules: {
             name: {
@@ -12,16 +18,16 @@ $.validator.methods.equal = function(value, element, param) {
             },
             email: {
                 required: true,
-		        email: true
+                email: true
             },
             message: {
                 required: true
             },
-	    
-     	    math: {
-		equal: 7	
-	   }
-		
+        
+            math: {
+        equal: result   
+       }
+        
         },
         messages: {
             name: {

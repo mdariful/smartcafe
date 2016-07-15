@@ -6,8 +6,6 @@ Follow the instruction to prepare your server [Wiki](https://github.com/mdariful
 
 ![alt tag](http://mdariful.com/img/projects/projects.jpg)
 
-![alt tag](http://mdariful.com/img/projects/paginalogin.jpg)
-
 ![alt tag](http://mdariful.com/img/projects/paginapricipale.jpg)
 
 ![alt tag](http://mdariful.com/img/projects/ordini.jpg)
